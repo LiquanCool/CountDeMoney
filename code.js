@@ -20,6 +20,13 @@ var nickel = 0;
 var dime = 0;
 var quarter = 0;
 
+function init() {
+  document.getElementById("myText").innerHTML = 0;
+  document.getElementById("penny").innerHTML = 0;
+  document.getElementById("nickel").innerHTML = 0;
+  document.getElementById("dime").innerHTML = 0;
+  document.getElementById("quarter").innerHTML = 0;
+}
 function addP() {
     number+=0.01;
     penny+=1;
@@ -34,7 +41,7 @@ function minusP() {
     number= Math.round(number*100)/100;
     document.getElementById("myText").innerHTML = number;
     document.getElementById("penny").innerHTML = penny;
-
+    document.getElementById("dime").innerHTML = dime;
   }
 function addN() {
     number+=0.05;
